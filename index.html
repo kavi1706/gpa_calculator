@@ -1,0 +1,190 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        
+    </head>
+        <body>
+            
+            <div class="row">
+                <div class="col-md-12 bg-info">
+                    <h2 style="text-align: center;">GPA CALCULATOR</h2>
+                </div>
+              
+            </div>
+            <div class="row">
+                <div class="col-md-3 bg-secondary">
+
+                </div>
+              <div class="col-md-6 bg-secondary text-white">
+                <form action="" method="post">
+                    <h5>ENTER STUDENT NAME:</h5> <input type="text" name="y" id="y1" class="form-control">
+                    <h5>ENTER STUDENT ROLL NO:</h5> <input type="text" name="y1" id="y2" class="form-control">
+                    <h5>ENTER SUB1:</h5> <input type="text" name="s1" id="c1" class="form-control">
+                    <h5>ENTER COURSE CODE:</h5> <input type="text" name="c1" id="d1" class="form-control">
+                    <h5>ENTER SUB1 GP:</h5><input type="text" id="v1" name="x" class="form-control">
+                    <h5>ENTER SUB1 CRED:</h5> <input type="text" id="v2" name="x1"class="form-control">
+                    <h5>ENTER SUB2:</h5> <input type="text" name="s2" id="c2" class="form-control">
+                    <h5>ENTER COURSE CODE:</h5> <input type="text" name="c2" id="d2" class="form-control">
+                    <h5>ENTER SUB2 GP:</h5> <input type="text" name="x2" id="v3" class="form-control">
+                    <h5>ENTER SUB2 CRED:</h5> <input type="text" id="v4" name="x3" class="form-control">
+                    <h5>ENTER SUB3:</h5> <input type="text" name="s3" id="c3" class="form-control">
+                    <h5>ENTER COURSE CODE:</h5> <input type="text" name="c3" id="d3" class="form-control">
+                    <h5>ENTER SUB3 GP:</h5> <input type="text" name="x4" id="v5" class="form-control">
+                    <h5>ENTER SUB3 CRED:</h5> <input type="text" id="v6" name="x5" class="form-control">
+                    <h5>ENTER SUB4:</h5> <input type="text" name="s4" id="c4" class="form-control">
+                    <h5>ENTER COURSE CODE:</h5> <input type="text" name="c4" id="d4" class="form-control">
+                    <h5>ENTER SUB4 GP:</h5> <input type="text" name="x6" id="v7" class="form-control">
+                    <h5>ENTER SUB4 CRED:</h5> <input type="text" id="v8" name="x7" class="form-control">
+                    <h5>ENTER SUB5:</h5> <input type="text" name="s5" id="c5" class="form-control">
+                    <h5>ENTER COURSE CODE:</h5> <input type="text" name="c5" id="d5" class="form-control">
+                    <h5>ENTER SUB5 GP:</h5> <input type="text" name="x8" id="v9" class="form-control">
+                    <h5>ENTER SUB5 CRED:</h5> <input type="text" id="v0" name="x9" class="form-control">
+                    <h5>ENTER FIRST SEM GPA:</h5> <input type="text" id="v10" name="x10" class="form-control">
+                    <h5>ENTER SECOND SEM GPA:</h5> <input type="text" id="v11" name="x11" class="form-control"><br>
+                    <input type="button" value="calculate" onclick="show()" class="btn btn-danger">
+                </form>
+              </div>
+              <div class="col-md-3 bg-secondary">
+
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 bg-info" >
+                   
+                    <div class="row">
+                        <div class="col-md-3">
+
+                        </div>
+                        <div class="col-md-5">
+                            <h3 style="text-align: center;">KONGU ENGINEERING COLLEGE <i>(Autonomous)</i> </h3>
+                            <h4 style="text-align:center;">End Semester Examination:March-2022</h4>
+                            <span> <b>STUDENT NAME:</b></span><span id="demo"></span><br>
+                            <span><b>REGISTER NUMBER:</b></span><span id="demo1"></span><br>
+                            <b>DEPARTMENT:</b>Information Technology <br>
+                            <table border="2" class="table table-striped table-bordered table-success">
+                                
+                                
+                                <tr>
+                                    <th>S.No</th>
+                                    <th>Course code</th>
+                                    <th>Course</th>
+                                    <th>Credits</th>
+                        
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><p id="ab"></p></td>
+                                    <td><p id="demo6"></p></td>
+                                    <td><p id="demo11"></p></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><p id="cd"></p></td>
+                                    <td><p id="demo7"></p></td>
+                                    <td><p id="demo12"></p></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><p id="ef"></p></td>
+                                  <td><p id="demo8"></p></td>
+                                  <td><p id="demo13"></p></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td><p id="gh"></p></td>
+                                    <td><p id="demo9"></p></td>
+                                    <td><p id="demo14"></p></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td><p id="ij"></p></td>
+                                    <td><p id="demo10"></p></td>
+                                    <td><p id="demo15"></p></td>
+                                </tr>
+                                <tr>
+
+                                    <td colspan="2">Current semester GPA:<p id="demo4"></p></td>
+                                    <td colspan="2">CGPA upto third semester:<p id="demo5"></p></td>
+                                </tr>
+                                
+                            </table>
+                            <h5>Date of publication:25.03.2022</h5>
+                            <button class="btn btn-success" >Print result</button>
+                        </div>
+                        <div class="col-md-4">
+
+                        </div>
+
+                    </div>
+                    
+                    <script type="text/javascript">
+                        function show()
+                        {
+                            var b=document.getElementById("y1").value;
+                            var b1=document.getElementById("y2").value;
+                            var d=document.getElementById("v1").value;
+                            var d1=document.getElementById("v2").value;
+                            var d2=document.getElementById("v3").value;
+                            var d3=document.getElementById("v4").value;
+                            var d4=document.getElementById("v5").value;
+                            var d5=document.getElementById("v6").value;
+                            var d6=document.getElementById("v7").value;
+                            var d7=document.getElementById("v8").value;
+                            var d8=document.getElementById("v9").value;
+                            var d9=document.getElementById("v0").value;
+                            var d10=document.getElementById("v10").value;
+                            var d11=document.getElementById("v11").value;
+                            var s1=document.getElementById("c1").value;
+                            var s2=document.getElementById("c2").value;
+                            var s3=document.getElementById("c3").value;
+                            var s4=document.getElementById("c4").value;
+                            var s5=document.getElementById("c5").value;
+                            var l1=document.getElementById("d1").value;
+                            var l2=document.getElementById("d2").value;
+                            var l3=document.getElementById("d3").value;
+                            var l4=document.getElementById("d4").value;
+                            var l5=document.getElementById("d5").value;
+                            var p1=parseInt(d)*parseInt(d1);
+                            var p2=parseInt(d2)*parseInt(d3);
+                            var p3=parseInt(d4)*parseInt(d5);
+                            var p4=parseInt(d6)*parseInt(d7);
+                            var p5=parseInt(d8)*parseInt(d9);
+                            var p=p1+p2+p3+p4+p5;
+                            var pp=parseInt(d1)+parseInt(d3)+parseInt(d5)+parseInt(d7)+parseInt(d9);
+                            var c=p/pp;
+                            var dd=(parseInt(d10)+parseInt(d11)+parseInt(c))/3;
+                            
+                            document.getElementById("demo").innerHTML=b;
+                            document.getElementById("demo1").innerHTML=b1;
+                            document.getElementById("demo4").innerHTML=+c.toFixed(2);
+                            document.getElementById("demo5").innerHTML=+dd.toFixed(2);
+                            document.getElementById("demo6").innerHTML=s1;
+                            document.getElementById("demo7").innerHTML=s2;
+                            document.getElementById("demo8").innerHTML=s3;
+                            document.getElementById("demo9").innerHTML=s4;
+                            document.getElementById("demo10").innerHTML=s5;
+                            document.getElementById("demo11").innerHTML=d1;
+                            document.getElementById("demo12").innerHTML=d3;
+                            document.getElementById("demo13").innerHTML=d5;
+                            document.getElementById("demo14").innerHTML=d7;
+                            document.getElementById("demo15").innerHTML=d9;
+                            document.getElementById("ab").innerHTML=l1;
+                            document.getElementById("cd").innerHTML=l2;
+                            document.getElementById("ef").innerHTML=l3;
+                            document.getElementById("gh").innerHTML=l4;
+                            document.getElementById("ij").innerHTML=l5;
+
+                        }
+            
+                    </script>
+                </div>
+               </div>
+
+             </div>
+            
+            
+            
+        </body>
+        
+</html>
